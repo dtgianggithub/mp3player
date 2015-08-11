@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.giangdam.mediamp3.Player"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/titleleft"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgtitleleft"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/imgtitleleft"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@+id/imgtitleright"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/lblTitle"
+
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <ImageView
+            android:id="@+id/imgtitleright"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/titleright"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCurrentTime"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTotalTime"
+            />
+
+    </RelativeLayout>
+
+    <SeekBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+
+        />
+
+
+    <TableLayout
+
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TableRow
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imgbtnshuffle"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/shuffle"
+
+                />
+            <TextView />
+            <ImageButton
+                android:id="@+id/imgbtnrepeat"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/repeat"
+                />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <TextView />
+            <ImageButton
+                android:id="@+id/imgbtnplay"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/play"
+                />
+            <TextView />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/imgbtnpre"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/pre"
+                />
+            <TextView />
+            <ImageButton
+                android:id="@+id/imgbtnnext"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/next"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
